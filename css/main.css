@@ -1,0 +1,17 @@
+:root {
+    --header-background-color: #000;
+    --gnb-font-color: #fff;
+    --color-blue: #5865f5;
+    --recommend-title-font-color: rgb(56, 56, 56);
+    --font-color-black: #222;
+    --font-color-gray: #666;
+    --event-head-font-color: rgb(24, 24, 24);
+    --footer-font-color: #bbb;
+    --footer-font-color-2: #888;
+    --sidebtn-background-color: #444;
+}
+
+@font-face {
+    font-family: "SSTPro","Noto Sans KR",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 500;
+}

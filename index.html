@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인</title>
+</head>
+<body>
+    <!-- https://store.sony.co.kr/ -->
+
+
+    <header>
+        <div class="header-wrapper">
+            <h1 class="header-logo">
+                <a href="#">
+                    <!-- 원본 사이트에서 <a href="/">로 해놨는데 /이건 무슨 뜻인가요? -->
+                    <img src="img/logo.cae2c042.svg" alt="sony-logo">
+                    <!-- 이미지는 figure 안에 있어야하는데 h1에 figure 들어있어서 검사 에러뜸
+                        그냥 a태그 안에 이미지 넣어서? 아니면 svg이미지니까 object에 넣으면 될까요? -->
+                    <span class="hidden">SONY</span>
+                </a>
+            </h1>
+            <nav class="gnb mb-hidden">
+                <ul class="gnb-menu">
+                    <li>
+                        <a class="gnb-menu-title" href="#">스토어 추천 제품</a>
+                        <ul class="gnb-menu-secondary">
+                            <li><a href="#">추천 제품</a></li>
+                            <li><a href="#">선물 제안</a></li>
+                        </ul>
+                        <!-- ul안에 li에 ul 들어있어도 괜찮아요? -->
+                    </li>
+                    <li>
+                        <a class="gnb-menu-title" href="#">제품</a>
+                        <ul class="gnb-menu-secondary">
+                            <li><a href="#">카메라 </a></li>
+                            <li><a href="#">비디오 카메라</a></li>
+                            <li><a href="#">오디오</a></li>
+                            <li><a href="#">액세서리</a></li>
+                            <li><a href="#">PlayStation®</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="gnb-menu-title" href="#">기획전</a>
+                        <ul class="gnb-menu-secondary">
+                            <li><a href="#">소니스토어 단독</a></li>
+                            <li><a href="#">혜택존</a></li>
+                            <li><a href="#">예약판매</a></li>
+                            <li><a href="#">정품등록 이벤트</a></li>
+                            <li><a href="#">LIVE ON</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="gnb-menu-title" href="#">멤버십</a>
+                        <ul class="gnb-menu-secondary">
+                            <li><a href="#">등급&혜택 안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="gnb-menu-title" href="#">고객 서비스</a>
+                        <ul class="gnb-menu-secondary">
+                            <li><a href="#">FAQ&공지사항</a></li>
+                            <li><a href="#">정품등록 안내</a></li>
+                            <li><a href="#">제품 지원</a></li>
+                            <li><a href="#">구매 상담</a></li>
+                            <li><a href="#">직영점 안내</a></li>
+                            <li><a href="#">동영상 강좌</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-menu">
+                <button class="btn-search btn mb-hidden">
+                    <img src="img/ic_search.ccca8201.svg" alt="검색창">
+                </button>
+                <a class="btn-mypage btn mb-hidden" href="#">
+                    <img src="img/ic_mypage.22c9f386.svg" alt="마이페이지">
+                </a>
+                <a class="btn-cart btn" href="#">
+                    <img src="img/ic_cart.eeeb4a13.svg" alt="장바구니">
+                    <span class="badge mb-hidden">0</span>
+                </a>
+                <button class="btn-hamberger-menu btn pc-hidden">
+                    <img src="img/ic_menu.0a16e920.svg" alt="메뉴 열기">
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section id="section-swiper-slide">
+            <div class="swiper-slide-view">
+                <video class="video-slide-palyer" src="video/220613_WH-1000XM5_10sec.mp3" autoplay playsinline loop></video>
+                <!-- 비디오에 playsinline이 무슨 속성인가요? -->
+                <div class="kv-slide">
+                    <span class="kv-head">
+                        All New Design
+                        <br>WH-1000XM5
+                    </span>
+                    <span class="kv-copy">모든 것을 새롭게</span>
+                    <a class="kv-link" href="https://store.sony.co.kr/product-view/104580435">자세히 보기</a>
+                </div>
+                <div class="swiper-page-number">
+                    <span class="swiper-pagination-current">No. 01</span>
+                    <span class="swiper-pagination-total">05</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-recommend">
+            <div class="recommend-swiper-img-container">
+                <figure class="recommend-swiper-img"></figure>
+            </div>
+            <div class="recommend-swiper-items-container">
+                <div class="recommend-items">
+                    <a href="https://store.sony.co.kr/product-view/104580435">
+                        <span class="recommend-item-copy">All New Design</span>
+                        <figure class="recommend-item-img">
+                            <img src="img/104580435_1.png" alt="All New Design">
+                        </figure>
+                        <span class="recommend-item-name">WH-1000XM5</span>
+                        <span class="recommend-item-desc">All New Design</span>
+                    </a>
+                </div>
+                <div class="swiper-scrollbar">
+                    <div class="swiper-scrollbar-drag"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-event">
+            <h2 class="event-title">EVENT</h2>
+            <div class="event-wrapper">
+                <!-- 이벤트 article로 작성해도 괜찮나요? -->
+                <article class="main-event">
+                    <a href="https://store.sony.co.kr/event/detail/2688"></a>
+                    <div class="event-copy">
+                        <span class="event-copy-head">여름방학, 일취월장</span>
+                        <p class="event-copy-desc">언제 어디서나, 집중을 위한 필수템</p>
+                    </div>
+                    <div class="event-swiper-continaer">
+                        <figure class="event-item-img">
+                            <img src="img/92487211_List0.png" alt="상품이미지">
+                        </figure>
+                        <button class="swiper-button-prev"></button>
+                        <button class="swiper-button-next"></button>
+                        <div class="event-swiper-text">
+                            <span class="event-item-name">WH-1000XM4</span>
+                            <span class="event-item-price">459,000원</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="other-event sony-store">
+                    <a href="https://store.sony.co.kr/event/detail/2657">
+                        <div class="event-copy">
+                            <span class="event-copy-head">초여름, 소니스토어 압구정에서 잠시 쉬어가세요!</span>
+                            <p class="event-copy-desc">소니스토어 압구정에 방문하시면 시원한 음료를 드립니다!</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="other-event camping-speaker">
+                    <a href="https://store.sony.co.kr/event/detail/2687">
+                        <div class="event-copy">
+                            <span class="event-copy-head">
+                                경량 캠핑 스피커
+                                <br>SRS-XB13
+                            </span>
+                            <p class="event-copy-desc">미니멀한 사이즈, 파워풀한 사운드! 캠핑 아이템 SRS-XB13</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="other-event camping-speaker">
+                    <a href="https://store.sony.co.kr/event/detail/3061">
+                        <div class="event-copy">
+                            <span class="event-copy-head">
+                                ZV White Grip 패키지
+                            </span>
+                            <p class="event-copy-desc">All White로 완벽하게 매칭한 ZV를 만나세요!</p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+            <a class="more-event" href="https://store.sony.co.kr/event/list">더 보러 가기</a>
+        </section>
+
+        <section id="section-product">
+            <h2 class="product-title">PRODUCT</h2>
+            <div class="product-wrapper">
+                <ul class="product-lists">
+                    <li class="product-list camera">
+                        <a href="https://store.sony.co.kr/products/camera">Camera</a>
+                    </li>
+                    <li class="main-product-list vcamera">
+                        <a href="https://store.sony.co.kr/products/videocamera">Video Camera</a>
+                    </li>
+                    <li class="main-product-list audio">
+                        <a href="https://store.sony.co.kr/products/audio">Audio</a>
+                    </li>
+                    <li class="main-product-list playstation">
+                        <a href="https://store.sony.co.kr/products/playstation">PlayStation®</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="section-banner">
+            <div class="banner-copy">
+                <h2 class="banner-head">
+                    알파 아카데미
+                    <br>7월 수강신청
+                </h2>
+                <a class="banner-link" href="https://www.sony.co.kr/alpha/handler/NAlphaAcademy-OfflineList?classMonth=202207">자세히 보기</a>
+            </div>
+        </section>
+
+        <section id="section-help">
+            <h2 class="help-title">
+                무엇을
+                <br>도와드릴까요?
+            </h2>
+            <ul class="help-ists">
+                <li class="help-ist notice">
+                    <a href="https://store.sony.co.kr/faq">FAQ & 공지사항</a>
+                </li>
+                <li class="help-ist location">
+                    <a href="https://store.sony.co.kr/store-info">매장안내</a>
+                </li>
+                <li class="help-ist customer">
+                    <a href="https://store.sony.co.kr/store-info">고객센터</a>
+                </li>
+                <li class="help-ist service">
+                    <a href="https://store.sony.co.kr/store-info">제품지원</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer-inner">
+            <nav class="sidebar">
+                <div class="sidebar-inner">
+                    <a class="sidebar-btn kakao" href="#"><span>카톡 상담</span></a>
+                    <a class="sidebar-btn customer" href="#"><span>고객 센터</span></a>
+                    <a class="sidebar-btn top" href="#header"><span>페이지 상단</span></a>
+                    <button class="sidebar-btn-toggle">
+                        <img src="img/ic_sidebar1.svg" alt="메뉴토글">
+                    </button>
+                </div>
+            </nav>
+            <div class="footer-legal">
+                <div class="footer-legal-links">
+                    <a class="footer-legal-link" href="https://store.sony.co.kr/footer/terms">이용약관</a>
+                    <a class="footer-legal_-link privacy" href="https://www.sony.co.kr/handler/ProductInfo-Start?PageName=jsp/footer/CF_policy.jsp">개인정보처리방침</a>
+                    <a href="/" class="footer-legal-link">소비자 피해 보상보험</a>
+                    <a class="footer-legal-link" href="https://store.sony.co.kr/footer/sitemap">사이트맵</a>
+                </div>
+                <div class="footer-legal-warning">
+                    <p>본 사이트의 컨텐츠는 저작권법의 보호를 받는 바, 상업적 목적의 무단전재, 복사, 배포 등을 금합니다.</p>
+                    <p>고객님의 안정한 거래를 위해 현금 등의 거래를 통한 결제를 하실 경우,
+                        <br> KG이니시스의 구매 안전서비스(채무지급보증)를 이용하실 수 있습니다.
+                    </p>
+                    <a class="escrow" href="https://mark.inicis.com/mark/escrow_popup_v3.php?mid=SonyKoreat"></a>
+                </div>
+            </div>
+            <div class="footer-social-wrap">
+                <div class="footer-social">
+                    <h3 class="footer-social-title">FOLLOW US</h3>
+                    <div class="footer-social-links">
+                        <a class="footer-social-link" href="https://www.facebook.com/sonykorea">
+                            <img src="/static/media/ic_facebook.415de282.svg" alt="facebook">
+                        </a>
+                        <a class="footer-social-link" href="https://www.instagram.com/sonykorea">
+                            <img src="/static/media/ic_instagram.12a710ab.svg" alt="instagram">
+                        </a>
+                        <a class="footer-social-link" href="https://www.youtube.com/user/sonystyleblog">
+                            <img src="/static/media/ic_youtube.e6733965.svg" alt="youtube">
+                        </a>
+                        <a class="footer-social-link" href="https://stylezineblog.com/?intcmp=Main_Blog">
+                            <img src="/static/media/ic_blog.75c8bb6d.svg" alt="blog">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-family">
+                    <button class="btn-family btn">Sony Family</button>
+                    <a class="family-global" href="https://www.sony.com/en/">Sony Global</a>
+                </div>
+            </div>
+            <address class="footer-adress">
+                <span>사업장주소 : 서울특별시 영등포구 국제금융로 10 원아이에프씨 24F</span>
+                <span>사업자 등록번호 : 106-81-23810 통신판매번호 2012-서울영등포-1038 소니코리아㈜</span>
+                <span>대표이사 : Okura Kikuo</span>
+                <span>개인정보관리책임자 : Okura Kikuo</span>
+                <span>TEL : 소니코리아 고객센터 1588-0911</span>
+                <span>E-MAIL : <a href="mailto:cshelp@sony.co.kr">cshelp@sony.co.kr</a></span>
+                <span>Copyright © Sony Korea Corporation. All rights reserved.</span>
+            </address>
+            <!-- address태그 처음보는데 주소 적을때 사용해도 되나요? -->
+        </div>
+    </footer>
+</body>
+</html>
