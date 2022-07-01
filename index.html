@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>메인</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <!-- https://store.sony.co.kr/ -->
@@ -14,10 +16,7 @@
         <div class="header-wrapper">
             <h1 class="header-logo">
                 <a href="#">
-                    <!-- 원본 사이트에서 <a href="/">로 해놨는데 /이건 무슨 뜻인가요? -->
                     <img src="img/logo.cae2c042.svg" alt="sony-logo">
-                    <!-- 이미지는 figure 안에 있어야하는데 h1에 figure 들어있어서 검사 에러뜸
-                        그냥 a태그 안에 이미지 넣어서? 아니면 svg이미지니까 object에 넣으면 될까요? -->
                     <span class="hidden">SONY</span>
                 </a>
             </h1>
@@ -29,7 +28,6 @@
                             <li><a href="#">추천 제품</a></li>
                             <li><a href="#">선물 제안</a></li>
                         </ul>
-                        <!-- ul안에 li에 ul 들어있어도 괜찮아요? -->
                     </li>
                     <li>
                         <a class="gnb-menu-title" href="#">제품</a>
@@ -79,7 +77,6 @@
                 </a>
                 <a class="btn-cart btn" href="#">
                     <img src="img/ic_cart.eeeb4a13.svg" alt="장바구니">
-                    <span class="badge mb-hidden">0</span>
                 </a>
                 <button class="btn-hamberger-menu btn pc-hidden">
                     <img src="img/ic_menu.0a16e920.svg" alt="메뉴 열기">
@@ -92,8 +89,7 @@
     <main>
         <section id="section-swiper-slide">
             <div class="swiper-slide-view">
-                <video class="video-slide-palyer" src="video/220613_WH-1000XM5_10sec.mp3" autoplay playsinline loop></video>
-                <!-- 비디오에 playsinline이 무슨 속성인가요? -->
+                <video class="video-slide-palyer" src="video/220613_WH-1000XM5_10sec.mp4" autoplay playsinline muted loop></video>
                 <div class="kv-slide">
                     <span class="kv-head">
                         All New Design
@@ -132,26 +128,25 @@
 
         <section id="section-event">
             <h2 class="event-title">EVENT</h2>
+            <article class="main-event">
+                <!-- <a href="https://store.sony.co.kr/event/detail/2688"></a> -->
+                <div class="event-copy">
+                    <span class="event-copy-head">여름방학, 일취월장</span>
+                    <p class="event-copy-desc">언제 어디서나, 집중을 위한 필수템</p>
+                </div>
+                <div class="event-swiper-continaer">
+                    <figure class="event-item-img">
+                        <img src="img/92487211_List0.png" alt="상품이미지">
+                    </figure>
+                    <button class="swiper-button-prev"></button>
+                    <button class="swiper-button-next"></button>
+                    <div class="event-swiper-text">
+                        <span class="event-item-name">WH-1000XM4</span>
+                        <span class="event-item-price">459,000원</span>
+                    </div>
+                </div>
+            </article>
             <div class="event-wrapper">
-                <!-- 이벤트 article로 작성해도 괜찮나요? -->
-                <article class="main-event">
-                    <a href="https://store.sony.co.kr/event/detail/2688"></a>
-                    <div class="event-copy">
-                        <span class="event-copy-head">여름방학, 일취월장</span>
-                        <p class="event-copy-desc">언제 어디서나, 집중을 위한 필수템</p>
-                    </div>
-                    <div class="event-swiper-continaer">
-                        <figure class="event-item-img">
-                            <img src="img/92487211_List0.png" alt="상품이미지">
-                        </figure>
-                        <button class="swiper-button-prev"></button>
-                        <button class="swiper-button-next"></button>
-                        <div class="event-swiper-text">
-                            <span class="event-item-name">WH-1000XM4</span>
-                            <span class="event-item-price">459,000원</span>
-                        </div>
-                    </div>
-                </article>
                 <article class="other-event sony-store">
                     <a href="https://store.sony.co.kr/event/detail/2657">
                         <div class="event-copy">
@@ -171,7 +166,7 @@
                         </div>
                     </a>
                 </article>
-                <article class="other-event camping-speaker">
+                <article class="other-event package">
                     <a href="https://store.sony.co.kr/event/detail/3061">
                         <div class="event-copy">
                             <span class="event-copy-head">
@@ -192,13 +187,13 @@
                     <li class="product-list camera">
                         <a href="https://store.sony.co.kr/products/camera">Camera</a>
                     </li>
-                    <li class="main-product-list vcamera">
+                    <li class="product-list vcamera">
                         <a href="https://store.sony.co.kr/products/videocamera">Video Camera</a>
                     </li>
-                    <li class="main-product-list audio">
+                    <li class="product-list audio">
                         <a href="https://store.sony.co.kr/products/audio">Audio</a>
                     </li>
-                    <li class="main-product-list playstation">
+                    <li class="product-list playstation">
                         <a href="https://store.sony.co.kr/products/playstation">PlayStation®</a>
                     </li>
                 </ul>
@@ -297,7 +292,6 @@
                 <span>E-MAIL : <a href="mailto:cshelp@sony.co.kr">cshelp@sony.co.kr</a></span>
                 <span>Copyright © Sony Korea Corporation. All rights reserved.</span>
             </address>
-            <!-- address태그 처음보는데 주소 적을때 사용해도 되나요? -->
         </div>
     </footer>
 </body>
