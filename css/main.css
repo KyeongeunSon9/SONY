@@ -14,7 +14,10 @@
     --word-spacing: -2px;
 }
 
-/* flex: 0 1 25%; 이건 어떻게 적용되는건가요? */
+/* flex: 0 1 25%; 어떻게 적용되는건가요? */
+/* height: calc(100vh - 80px); 무슨뜻인가요? */
+/* event-wrapper에 있는 아티클 호버했을때 이미지에 커서가 안돼요  */
+/* filter: grayscale(1) brightness(1.75) 호버했을때 색이 바뀌는데 무슨 속성인가요 저는 색깔이 반대로 바뀌어요*/
 /* text-indent가 뭔가요? 푸터에 -9999em 해놨던데 */
 
 .hidden {
@@ -103,7 +106,9 @@ main {
 
 .swiper-slide-view {
     width: 100vw;
-    height: 810px;
+    height: calc(100vh - 80px);
+    min-height: 600px;
+    max-height: 1200px;
     position: relative;
 }
 
@@ -361,13 +366,17 @@ main {
     margin-top: 20px;
 }
 
+.event-wrapper a {
+    display: block;
+    height: 100%;
+}
+
 .other-event {
-    width: 550px;
+    width: 610px;
     height: 550px;
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center center;
-    text-align: center;
     padding: 40px;
     box-sizing: border-box;
     transition: .2s ease-in-out;
@@ -433,17 +442,17 @@ main {
 }
 
 .product-list a {
-    width: 380px;
-    height: 460px;
+    width: 420px;
+    height: 500px;
     display: block;
     background-size: calc(1.44404px + 20.75812vw);
-    background-position: 9vw 40px;
+    background-position: 10vw 40px;
     background-repeat: no-repeat;
     font-size: 25px;
     font-weight: 700;
     color: var(--font-color-black);
     transition: .2s ease-out;
-    line-height: 850px;
+    line-height: 900px;
     padding: 30px;
     border-right: 1px solid #e1e1e1;
 }
@@ -541,7 +550,7 @@ main {
 
 .help-list a {
     display: block;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 600;
     color: var(--font-color-black);
     text-align: center;
@@ -687,4 +696,47 @@ footer {
     font-size: 12px;
     line-height: 18px;
     margin-top: 30px;
+}
+
+.footer-social-title {
+    font-size: 25px;
+    color: var(--footer-font-color);
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+}
+
+.footer-social-links {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+
+.footer-social-link:hover{
+    filter: grayscale(1) brightness(1.75);
+}
+
+.footer-family {
+    display: flex;
+    margin-top: 30px;
+}
+
+.btn-family {
+    color: var(--footer-font-color-2);
+    width: 300px;
+    height: 50px;
+    background-color: #222;
+    margin-right: 10px;
+}
+
+.family-global {
+    display: block;
+    color: var(--footer-font-color-2);
+    width: 300px;
+    height: 50px;
+    background-color: #222;
+    text-align: center;
 }
