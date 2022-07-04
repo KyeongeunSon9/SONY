@@ -14,12 +14,6 @@
     --word-spacing: -2px;
 }
 
-/* flex: 0 1 25%; 어떻게 적용되는건가요? */
-/* height: calc(100vh - 80px); 무슨뜻인가요? */
-/* event-wrapper에 있는 아티클 호버했을때 이미지에 커서가 안돼요  */
-/* filter: grayscale(1) brightness(1.75) 호버했을때 색이 바뀌는데 무슨 속성인가요 저는 색깔이 반대로 바뀌어요*/
-/* text-indent가 뭔가요? 푸터에 -9999em 해놨던데 */
-
 .hidden {
     position: absolute;
     width: 1px;
@@ -106,7 +100,7 @@ main {
 
 .swiper-slide-view {
     width: 100vw;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 70px);
     min-height: 600px;
     max-height: 1200px;
     position: relative;
@@ -387,7 +381,7 @@ main {
 }
 
 .other-event .event-copy {
-    margin-top: 350px;
+    padding-top: 350px;
     transition: none;
 }
 
@@ -715,7 +709,7 @@ footer {
     margin-left: 50px;
 }
 
-.footer-social-link:hover{
+.footer-social-link:not(:hover) {
     filter: grayscale(1) brightness(1.75);
 }
 
